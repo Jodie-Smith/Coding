@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title">EnsureCar Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve our car insurance
+        </p>
+    </div>
+    
+
+<div id="form-container">
+    <form action="#" method="GET" id="survey-form">
+        <!--do I need to put a method 'get'? not really, get is default, shall I leave it?-->
+        <p id="name">Name<br />
+            <input type="text" name="name" maxlength="30" placeholder="ex: John Smith" required/>
+        </p>
+        <p id="age">Age (optional)<br />
+            <input type="number" name="age"/>
+        </p>
+        <p id="email">Email<br />
+            <input type="email" name="email" placeholder="example@gmail.com" required/> 
+        </p>
+        <p id="gender"> Gender<br />
+            <input type="radio" name="gender" value="male" checked/> Male
+            <input type="radio" name="gender" value="female"/> Female
+            <input type="radio" name="gender" value="neither"/> Prefer not to say
+        </p>
+
+
+        <p id="employment">What is your current form of employment?<br />
+             <!--shall i take out the 'employment' id in the p (above)?-->
+            <select name="employment">
+                <option disabled selected>Select an option</option>
+                <option value="full">Full time</option>
+                <option value="part">Part time</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="student">Student</option>
+                <option value="none">Prefer not to say</option>
+
+            </select>
+        </p>
+        
+        <p id="recommend">Would you recommend EnsureCar to a friend?<br />
+            <input type="radio" name="recommend" value="yes" checked/> Yes<br />
+            <input type="radio" name="recommend" value="no"/> No<br />
+            <input type="radio" name="recommend" value="not-sure"/> Not sure<br />
+        </p>
+
+        <p id="premium">Which of these are covered in your car insurance premium? (tick all that apply)<br />
+            <input type="checkbox" name="premium" value="breakdown" checked/>Breakdown cover<br />
+            <input type="checkbox" name="premium" value="legal"/>Legal cover<br />
+            <input type="checkbox" name="premium" value="injury"/>Personal injury cover<br />
+            <input type="checkbox" name="premium" value="key"/>Key Care<br />
+            <input type="checkbox" name="premium" value="claims"/>No claims bonus protection<br />
+            
+        </p>
+
+        <p id="pay">How do you pay for your insurance?<br />
+           <!--shall i take out the 'pay' id in the p (above)?-->
+            <select name="pay" id="Payment">
+                <option disabled selected>Select an option</option>
+                <option value="monthly">Monthly</option>
+                <option value="annually">Annually</option>
+            </select>
+        </p>
+
+        <p id="improve">What would you like to see improved? (tick all that apply)<br />
+            <input type="checkbox" name="improve" value="customer" checked/>Customer service<br />
+            <input type="checkbox" name="improve" value="more"/>More coverage<br /> 
+            <input type="checkbox" name="improve" value="loyalty"/>Customer loyalty rewards<br /> 
+            <input type="checkbox" name="improve" value="digital"/>Digital connectivity (apps, online chats, etc.)<br />
+        </p>
+
+        <p>Any comments or suggestions?</p>
+            <textarea name="comments" cols="20" rows="4">Enter your comments here...</textarea><br />
+
+        <div id="button">
+            <input type="submit" name="submit" value="submit" id="submit"> <!--how to make this into a captial S-->
+        </div> 
+     
+    </form>
+</div>
+
+
+
+</body>
+</html>

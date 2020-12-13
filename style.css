@@ -1,0 +1,105 @@
+body {
+    background-image: linear-gradient(rgba(85, 62, 19, 0.74), rgba(58, 48, 16, 0.74)), url(imgs/survey-background.jpg);
+    /* or, to get transparant layer, can use box-shaw command*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+
+#title {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+
+}
+
+#description {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#form-container {
+    align-items: center;
+    /* How do I align all items in the centre*/
+    background-color: rgba(65, 61, 57, 0.76);
+    opacity: 1;
+    border-radius: 2%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+    margin: auto;
+    width: 50%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+input[type=text] {
+    width: 80%;
+    height: 25px;
+    border-radius: 3px; 
+    border: 2px solid #aaaaaa;
+    margin: 8px 0;
+    outline: none;
+    
+}
+
+input[type=number] {
+    width: 80%;
+    height: 25px;
+    border-radius: 3px; 
+    border: 2px solid #aaaaaa;
+    margin: 8px 0;
+    outline: none;
+}
+
+input[type=email] {
+    width: 80%;
+    height: 25px;
+    border-radius: 3px; 
+    border: 2px solid #aaaaaa;
+    margin: 8px 0;
+    outline: none;
+}
+
+select {
+    width: 80%; /*not aligned*/
+    height: 25px;
+    border-radius: 3px; 
+    border: 2px solid #aaaaaa;
+    margin: 8px 0;
+    font-family: 'Lato', sans-serif;
+    color: #868585;
+}
+
+input[type=checkbox] {
+    line-height: 3px;
+    
+}
+
+textarea {
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    height: 70px;
+    color: #868585;
+}
+
+input[type=submit] {
+    width: 80%; /*not aligned*/
+    height: 35px;
+    background-color: rgb(21, 156, 51);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-radius: 3px; 
+    border: 2px solid #aaaaaa;
+    font-size: 18px;
+}
+
+#button {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
